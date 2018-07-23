@@ -11,6 +11,12 @@ import Foundation
 protocol PageRepository {
     
     var pageInfo: PageInfo { get set }
-    
+    var canLoadMore: Bool { get }
 }
 
+extension PageRepository {
+    
+    var canLoadMore: Bool {
+        return pageInfo.totalPages > pageInfo.page
+    }
+}

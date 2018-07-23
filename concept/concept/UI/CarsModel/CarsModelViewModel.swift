@@ -28,7 +28,7 @@ class CarsModelViewModel: StateObservarable {
         self.repository = repository
         self.carManufacture = carManufacture
         self.state = .success([CarModelCellViewModel]())
-        self.title = carManufacture.identifier
+        self.title = carManufacture.name
     }
     
     func alertInfo(_ vm: CarModelCellViewModel?) -> (title: String, message: String) {
@@ -36,7 +36,7 @@ class CarsModelViewModel: StateObservarable {
         guard let vm = vm else {
             return (title, "")
         }
-        let message = "\(carManufacture.name)\(vm.text)"
+        let message = "\(carManufacture.name), \(vm.text)"
         return (title, message)
     }
 }
@@ -93,6 +93,6 @@ extension CarsModelViewModel: Requestable {
     }
     
     func canLoadMore(from indexPath: IndexPath) -> Bool {
-       return indexPath.row == list.count - 1
+       return indexPath.row == list.count - 1 && repository.canLoadMore
     }
 }

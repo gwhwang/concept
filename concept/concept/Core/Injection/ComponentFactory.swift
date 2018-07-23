@@ -36,7 +36,7 @@ struct ComponentFactory: ComponentFactoryAdapter {
     private var pageSize: Int {
         return appConfig.pageSize
     }
-    
+
     func carsManufacture() -> (viewModel: CarsManufactureViewModel, router: CarManufactureRouterAdapter) {
         let manufactureComponents = CarManufactureComponents()
         let viewModel = manufactureComponents.carManufactureViewModel(networkService: networkService,

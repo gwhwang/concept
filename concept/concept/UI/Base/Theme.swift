@@ -17,7 +17,7 @@ enum Theme {
     var color: UIColor {
         switch self {
         case .dark:
-            return .darkGray
+            return .gray
         case .light:
             return .lightGray
         }

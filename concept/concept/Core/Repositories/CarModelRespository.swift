@@ -35,16 +35,16 @@ class CarModelRespository: CarModelRespositoryAdapter {
     
     func get(for manufacturerId: String,
              onComplete: @escaping Completion) {
-        useCase.get(mufactureId: manufacturerId, page: pageInfo.page, pageSize: pageInfo.pageSize) { [unowned self] (list, pageInfo, reponse) in
+        useCase.get(mufactureId: manufacturerId, page: pageInfo.page, pageSize: pageInfo.pageSize) { [weak self] (list, pageInfo, reponse) in
         
             if let list = list, list.count > 0 {
-                self.list.append(contentsOf: list)
+                self?.list.append(contentsOf: list)
             }
             if let pageInfo = pageInfo {
-                self.pageInfo = pageInfo
+                self?.pageInfo = pageInfo
             }
             
-            onComplete(self.list, reponse)
+            onComplete(self?.list ?? [], reponse)
         }
     }
     

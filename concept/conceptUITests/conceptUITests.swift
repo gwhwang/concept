@@ -8,7 +8,7 @@
 
 import XCTest
 
-class conceptUITests: XCTestCase {
+class conceptUITests: XCTestCase, UITestScenario {
         
     override func setUp() {
         super.setUp()
@@ -28,9 +28,29 @@ class conceptUITests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testShowAlert() {
+        let app = XCUIApplication()
+        scenario( "open Alert", given: "I have a list of manufactures", givenHandler: {
+
+        }, when: "When I select cell open details ", whenHandler: {
+            let mainViewCell = app.tables/*@START_MENU_TOKEN@*/.cells.staticTexts["Brilliance"]/*[[".cells.staticTexts[\"Brilliance\"]",".staticTexts[\"Brilliance\"]"],[[[-1,1],[-1,0]]],[1]]@END_MENU_TOKEN@*/
+            self.waitforExistence(mainViewCell)
+            mainViewCell.tap()
+
+            let detailCell = app.tables.cells.containing(.staticText, identifier:"BS6").children(matching: .staticText).matching(identifier: "BS6").element(boundBy: 1)
+            self.waitforExistence(detailCell)
+            detailCell.tap()
+        }, then: "the show alert", thenHandler: {
+
+            let alert = app.alerts["Concept"]
+            self.waitforExistence(alert)
+            let alertText = alert.staticTexts["Brilliance, BS6"]
+            self.waitforExistence(alertText)
+            XCTAssertTrue(alertText.exists)
+            
+            let okButton = alert.buttons["ok"]
+            self.waitforExistence(okButton)
+            XCTAssertTrue(okButton.exists)
+        })
     }
-    
 }

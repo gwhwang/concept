@@ -17,7 +17,7 @@ extension PageUseCase {
     func parse(json: JSON?) -> (pageInfo:PageInfo, json: JSON?) {
         var page = json?["page"].intValue ?? 0
         let pageSize = json?["pageSize"].intValue ?? 0
-        let totalPages = json?["totalPages"].intValue ?? 0
+        let totalPages = json?["totalPageCount"].intValue ?? 0
         let json = json?["wkda"]
         
         page = totalPages > page ? page + 1 : page

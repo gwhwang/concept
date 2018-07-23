@@ -16,26 +16,12 @@ enum NetworkRequestBuilder {
     func build() -> String {
         switch self {
         case .manufactures(let baseUri, let apiKey, let page, let pageSize):
-            return url(baseUri: baseUri,
-                       path: "v1/car-types/manufacturer",
-                       page: page,
-                       pageSize: pageSize,
-                       apiKey: apiKey)
+            let path = "v1/car-types/manufacturer"
+            return "\(baseUri)/\(path)?page=\(page)&pageSize=\(pageSize)&wa_key=\(apiKey)"
         case .models(let baseUri, let apiKey, let mufactureId, let page, let pageSize):
-            return url(baseUri: baseUri,
-                       path: "v1/car-types/main-types?manufacturer=\(mufactureId)",
-                       page: page,
-                       pageSize: pageSize,
-                       apiKey: apiKey)
+            let path = "v1/car-types/main-types?manufacturer=\(mufactureId)"
+            return "\(baseUri)/\(path)&page=\(page)&pageSize=\(pageSize)&wa_key=\(apiKey)"
         }
-    }
-    
-    private func url(baseUri: String,
-                     path: String,
-                     page: Int,
-                     pageSize: Int,
-                     apiKey: String) -> String {
-        return "\(baseUri)/\(path)?page=\(page)&pageSize=\(pageSize)&wa_key=\(apiKey)"
     }
     
 }

@@ -23,7 +23,7 @@ struct CarManufactureComponents: CarManufactureComponentsAdapter {
    func carManufactureViewModel(networkService: NetworkServiceProvider,
                                 apiInfo: ApiInfo,
                                 pageSize: Int) -> CarsManufactureViewModel {
-        let pageInfo = PageInfo(page: 0, pageSize: pageSize, totalPages: pageSize)
+        let pageInfo = PageInfo(page: 0, pageSize: pageSize, totalPages: 0)
         
         let useCase = CarManufactureUseCase(service: networkService, apiInfo: apiInfo)
         let repository = CarManufactureRepository(useCase: useCase, pageInfo: pageInfo)

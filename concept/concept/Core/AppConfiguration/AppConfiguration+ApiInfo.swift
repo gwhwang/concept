@@ -17,13 +17,15 @@ extension AppConfiguration {
     
     private var baseUri: String {
         guard let uri = configurations?[Keys.baseUri] as? String else {
-            return ""
+            let error = "Error: Please add the baseURi in concept/Core/AppConfiguration.plist"
+            return error
         }
         return uri
     }
     private var apiKey: String {
         guard let key = configurations?[Keys.apiKey] as? String else {
-            return ""
+            let error = "Error: Please add the apiKey in concept/Core/AppConfiguration.plist"
+            return error
         }
         return key
     }

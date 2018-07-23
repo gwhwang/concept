@@ -62,6 +62,21 @@
 		3E0A9F4B210648B300BE2EC4 /* AppComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0A9F47210648B300BE2EC4 /* AppComponents.swift */; };
 		3E0A9F4C210648B300BE2EC4 /* ComponentFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0A9F48210648B300BE2EC4 /* ComponentFactory.swift */; };
 		3E0A9F4D210648B300BE2EC4 /* CarsModelComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0A9F49210648B300BE2EC4 /* CarsModelComponents.swift */; };
+		3E0A9F4F21064FBA00BE2EC4 /* AppConfigurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0A9F4E21064FBA00BE2EC4 /* AppConfigurationTests.swift */; };
+		3E0A9F512106513B00BE2EC4 /* NetworkRequestBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0A9F502106513B00BE2EC4 /* NetworkRequestBuilderTests.swift */; };
+		3E0A9F552106574100BE2EC4 /* manufacturers_page_0.json in Resources */ = {isa = PBXBuildFile; fileRef = 3E0A9F532106574100BE2EC4 /* manufacturers_page_0.json */; };
+		3E0A9F562106574100BE2EC4 /* model_manufacturer_107_page_0.json in Resources */ = {isa = PBXBuildFile; fileRef = 3E0A9F542106574100BE2EC4 /* model_manufacturer_107_page_0.json */; };
+		3E0A9F58210657B400BE2EC4 /* no_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 3E0A9F57210657B400BE2EC4 /* no_data.json */; };
+		3E0A9F5A210658D500BE2EC4 /* NetworkServiceStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0A9F59210658D500BE2EC4 /* NetworkServiceStub.swift */; };
+		3E0A9F5C21065A0900BE2EC4 /* TestScenario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0A9F5B21065A0800BE2EC4 /* TestScenario.swift */; };
+		3E0A9F5E21065A2300BE2EC4 /* UITestScenario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0A9F5D21065A2300BE2EC4 /* UITestScenario.swift */; };
+		3E0A9F5F21065A3C00BE2EC4 /* TestScenario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0A9F5B21065A0800BE2EC4 /* TestScenario.swift */; };
+		3E0A9F6121065B3D00BE2EC4 /* CarsManufactureViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0A9F6021065B3D00BE2EC4 /* CarsManufactureViewModelTests.swift */; };
+		3E0A9F63210660EA00BE2EC4 /* CarsModelViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0A9F62210660EA00BE2EC4 /* CarsModelViewModelTests.swift */; };
+		3E0A9F67210682FE00BE2EC4 /* PageRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0A9F66210682FE00BE2EC4 /* PageRepositoryTests.swift */; };
+		3E0A9F6921068DB500BE2EC4 /* CarManufactureRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0A9F6821068DB500BE2EC4 /* CarManufactureRepositoryTests.swift */; };
+		3E0A9F6B21068E7700BE2EC4 /* Mocker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0A9F6A21068E7700BE2EC4 /* Mocker.swift */; };
+		3E0A9F6D210699DF00BE2EC4 /* CarModelRespositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0A9F6C210699DF00BE2EC4 /* CarModelRespositoryTests.swift */; };
 		6EA320A9AA1D098D20185162 /* Pods_conceptTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6A5CE12BA10056836A4F8F9 /* Pods_conceptTests.framework */; };
 		C8D1CEAD42A6CB106C016F5F /* Pods_conceptUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FB835818CA1568D0DE1B5B0 /* Pods_conceptUITests.framework */; };
 		FD2578237DEBE6A7DBDEA0F7 /* Pods_concept.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 649DD96B62F0649AE6327C26 /* Pods_concept.framework */; };
@@ -147,6 +162,20 @@
 		3E0A9F47210648B300BE2EC4 /* AppComponents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppComponents.swift; sourceTree = "<group>"; };
 		3E0A9F48210648B300BE2EC4 /* ComponentFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentFactory.swift; sourceTree = "<group>"; };
 		3E0A9F49210648B300BE2EC4 /* CarsModelComponents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarsModelComponents.swift; sourceTree = "<group>"; };
+		3E0A9F4E21064FBA00BE2EC4 /* AppConfigurationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfigurationTests.swift; sourceTree = "<group>"; };
+		3E0A9F502106513B00BE2EC4 /* NetworkRequestBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestBuilderTests.swift; sourceTree = "<group>"; };
+		3E0A9F532106574100BE2EC4 /* manufacturers_page_0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = manufacturers_page_0.json; sourceTree = "<group>"; };
+		3E0A9F542106574100BE2EC4 /* model_manufacturer_107_page_0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = model_manufacturer_107_page_0.json; sourceTree = "<group>"; };
+		3E0A9F57210657B400BE2EC4 /* no_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = no_data.json; sourceTree = "<group>"; };
+		3E0A9F59210658D500BE2EC4 /* NetworkServiceStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceStub.swift; sourceTree = "<group>"; };
+		3E0A9F5B21065A0800BE2EC4 /* TestScenario.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestScenario.swift; sourceTree = "<group>"; };
+		3E0A9F5D21065A2300BE2EC4 /* UITestScenario.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITestScenario.swift; sourceTree = "<group>"; };
+		3E0A9F6021065B3D00BE2EC4 /* CarsManufactureViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsManufactureViewModelTests.swift; sourceTree = "<group>"; };
+		3E0A9F62210660EA00BE2EC4 /* CarsModelViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsModelViewModelTests.swift; sourceTree = "<group>"; };
+		3E0A9F66210682FE00BE2EC4 /* PageRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageRepositoryTests.swift; sourceTree = "<group>"; };
+		3E0A9F6821068DB500BE2EC4 /* CarManufactureRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarManufactureRepositoryTests.swift; sourceTree = "<group>"; };
+		3E0A9F6A21068E7700BE2EC4 /* Mocker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mocker.swift; sourceTree = "<group>"; };
+		3E0A9F6C210699DF00BE2EC4 /* CarModelRespositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarModelRespositoryTests.swift; sourceTree = "<group>"; };
 		649DD96B62F0649AE6327C26 /* Pods_concept.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_concept.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FB835818CA1568D0DE1B5B0 /* Pods_conceptUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_conceptUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		794C13E1AF40D3EB418EC1C6 /* Pods-conceptTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-conceptTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-conceptTests/Pods-conceptTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -228,6 +257,17 @@
 			isa = PBXGroup;
 			children = (
 				3E0A9E59210643BB00BE2EC4 /* conceptTests.swift */,
+				3E0A9F4E21064FBA00BE2EC4 /* AppConfigurationTests.swift */,
+				3E0A9F66210682FE00BE2EC4 /* PageRepositoryTests.swift */,
+				3E0A9F6A21068E7700BE2EC4 /* Mocker.swift */,
+				3E0A9F502106513B00BE2EC4 /* NetworkRequestBuilderTests.swift */,
+				3E0A9F59210658D500BE2EC4 /* NetworkServiceStub.swift */,
+				3E0A9F6021065B3D00BE2EC4 /* CarsManufactureViewModelTests.swift */,
+				3E0A9F6821068DB500BE2EC4 /* CarManufactureRepositoryTests.swift */,
+				3E0A9F6C210699DF00BE2EC4 /* CarModelRespositoryTests.swift */,
+				3E0A9F62210660EA00BE2EC4 /* CarsModelViewModelTests.swift */,
+				3E0A9F5B21065A0800BE2EC4 /* TestScenario.swift */,
+				3E0A9F522106565300BE2EC4 /* json */,
 				3E0A9E5B210643BB00BE2EC4 /* Info.plist */,
 			);
 			path = conceptTests;
@@ -237,6 +277,7 @@
 			isa = PBXGroup;
 			children = (
 				3E0A9E64210643BB00BE2EC4 /* conceptUITests.swift */,
+				3E0A9F5D21065A2300BE2EC4 /* UITestScenario.swift */,
 				3E0A9E66210643BB00BE2EC4 /* Info.plist */,
 			);
 			path = conceptUITests;
@@ -390,6 +431,16 @@
 			path = Injection;
 			sourceTree = "<group>";
 		};
+		3E0A9F522106565300BE2EC4 /* json */ = {
+			isa = PBXGroup;
+			children = (
+				3E0A9F532106574100BE2EC4 /* manufacturers_page_0.json */,
+				3E0A9F542106574100BE2EC4 /* model_manufacturer_107_page_0.json */,
+				3E0A9F57210657B400BE2EC4 /* no_data.json */,
+			);
+			path = json;
+			sourceTree = "<group>";
+		};
 		9A85AE80B11BB7B7EB539216 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -535,6 +586,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E0A9F58210657B400BE2EC4 /* no_data.json in Resources */,
+				3E0A9F552106574100BE2EC4 /* manufacturers_page_0.json in Resources */,
+				3E0A9F562106574100BE2EC4 /* model_manufacturer_107_page_0.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -682,7 +736,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E0A9F6B21068E7700BE2EC4 /* Mocker.swift in Sources */,
+				3E0A9F63210660EA00BE2EC4 /* CarsModelViewModelTests.swift in Sources */,
+				3E0A9F5A210658D500BE2EC4 /* NetworkServiceStub.swift in Sources */,
+				3E0A9F6121065B3D00BE2EC4 /* CarsManufactureViewModelTests.swift in Sources */,
+				3E0A9F5C21065A0900BE2EC4 /* TestScenario.swift in Sources */,
+				3E0A9F67210682FE00BE2EC4 /* PageRepositoryTests.swift in Sources */,
+				3E0A9F6921068DB500BE2EC4 /* CarManufactureRepositoryTests.swift in Sources */,
+				3E0A9F512106513B00BE2EC4 /* NetworkRequestBuilderTests.swift in Sources */,
+				3E0A9F4F21064FBA00BE2EC4 /* AppConfigurationTests.swift in Sources */,
 				3E0A9E5A210643BB00BE2EC4 /* conceptTests.swift in Sources */,
+				3E0A9F6D210699DF00BE2EC4 /* CarModelRespositoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -691,6 +755,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E0A9E65210643BB00BE2EC4 /* conceptUITests.swift in Sources */,
+				3E0A9F5F21065A3C00BE2EC4 /* TestScenario.swift in Sources */,
+				3E0A9F5E21065A2300BE2EC4 /* UITestScenario.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -83,7 +83,7 @@ extension CarsManufactureViewModel: Requestable {
     }
     
     func canLoadMore(from indexPath: IndexPath) -> Bool {
-        return indexPath.row == list.count - 1
+        return indexPath.row == list.count - 1 && repository.canLoadMore
     }
     
 }
