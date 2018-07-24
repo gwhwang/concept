@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>baseUri</key>
-	<string>http://api-aws-eu-qa-1.auto1-test.com</string>
+	<string></string>
 	<key>apiKey</key>
-	<string>coding-puzzle-client-449cc9d</string>
+	<string></string>
 	<key>pageSize</key>
 	<integer>15</integer>
 </dict>
